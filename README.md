@@ -15,8 +15,8 @@ In the two factorization models, users and items are represented by weights and 
 The factor terms model interactions between users and items. For example, if a user tends to love romance movies and hate action movies, the factor terms attempt to capture that, causing the model to predict lower scores for action movies and higher scores for romance movies. Learning good weights and factors is controlled by several options outlined below.
 
 More formally, the predicted score for user i, on item j is given by
+score(i,j)=μ+wi+wj+aTxi+bTyj+uTivj,
 
- <img src="https://latex.codecogs.com/gif.latex?O_t=\text { score(i,j)=μ+wi+wj+aTxi+bTyj+uTivj } t " /> 
 where μ
  is a global bias term, wi
  is the weight term for user i
